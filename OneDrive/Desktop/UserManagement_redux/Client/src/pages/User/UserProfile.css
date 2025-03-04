@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌟 Profile Page Layout */
+.profile-page {
+    display: flex;
+    height: 100vh;
+    background: #f8f9fa;
+}
+
+/* 🌟 Sidebar */
+.profile-navbar {
+    width: 20%;
+    background: linear-gradient(135deg, #0F6549, #0C4A37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌟 Logout Button */
+.logout-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #e60000;
+    transform: scale(1.05);
+}
+
+/* 🌟 Main Profile Section */
+.profile-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌟 Profile Picture Container */
+.image_container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input[type="file"] {
+    display: none; /* Hide default file input */
+}
+
+/* 🌟 Profile Picture Styling */
+.image-upload-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 4px solid #0F6549;
+    transition: 0.3s ease;
+    background: linear-gradient(145deg, #d4d4d4, #ffffff);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-upload-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Hover effect */
+.image-upload-button:hover {
+    border-color: #0C4A37;
+    transform: scale(1.07);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Upload Icon Overlay */
+.image-upload-button::after {
+    content: "\f093"; /* FontAwesome upload icon */
+    font-family: FontAwesome;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.image-upload-button:hover::after {
+    opacity: 1;
+}
+
+/* 🌟 Profile Information Card */
+.profile_information {
+    width: 60%;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile_information ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.profile_information li {
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    background: #f1f1f1;
+    padding: 15px 22px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_information li:hover {
+    background: #e0f5ea;
+    transform: scale(1.02);
+}
+
+.profile_information li span {
+    font-weight: bold;
+    color: #0F6549;
+}
+
+/* 🌟 Editable Input Styling */
+.profile_information input,
+.profile_information select {
+    width: 60%;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #0F6549;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.profile_information input:focus,
+.profile_information select:focus {
+    border-color: #0C4A37;
+    box-shadow: 0 0 5px rgba(15, 101, 73, 0.5);
+}
+
+/* 🌟 Buttons */
+.edit-btn, .save-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.edit-btn {
+    background: #007bff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.save-btn {
+    background: #28a745;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+

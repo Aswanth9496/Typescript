@@ -1,0 +1,179 @@
+.admin-dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover,
+.sidebar ul .active {
+    background: #1abc9c;
+    border-radius: 5px;
+}
+
+.logout {
+    color: #e74c3c;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dashboard-overview {
+    background: #3498db;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-list th,
+.user-list td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.user-list th {
+    background: #2c3e50;
+    color: white;
+}
+
+.user-list td {
+    background: #ecf0f1;
+}
+
+.user-list .edit {
+    background: #27ae60;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.user-list .delete {
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user-list .edit:hover,
+.user-list .delete:hover {
+    opacity: 0.8;
+}
+/* Buttons */
+.edit, .delete, .save, .cancel {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px;
+  }
+  
+  .edit {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .delete {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .save {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .cancel {
+    background-color: #7f8c8d;
+    color: white;
+  }
+  
+  /* Input Fields */
+  .user-list input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+  }
+  
+  /* Table */
+  .user-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-list th, .user-list td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Badges */
+  .admin-badge {
+    background: #f39c12;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .user-badge {
+    background: #2980b9;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
